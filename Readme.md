@@ -1,4 +1,4 @@
-#PGPemuKeyFormatter
+# PGPemuKeyFormatter
 This tool is used to format the data provided by the "Suota Go+" app from Jesus Bamford (https://github.com/Jesus805/Suota-Go-Plus)
 to fit the needs of the PGPemu Project for the ESP32 from Yohanes Nugroho (https://github.com/yohanes/pgpemu). 
 To Download the SuotaGo+ App: https://github.com/Jesus805/Suota-Go-Plus/releases/tag/v1.0
