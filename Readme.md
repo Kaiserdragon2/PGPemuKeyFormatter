@@ -8,3 +8,7 @@ Copy the Mac, blob and device key from the json file into the separte files(rawm
 Then just run PGPemuKeyFormatter.exe.
 The formatted data could be found in the three new files (mac.txt; bloob.txt; key.txt).
 
+### To build the project on your own
+
+Just download the source code and open it in Code Blocks to compile it.
+
