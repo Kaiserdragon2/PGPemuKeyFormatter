@@ -4,11 +4,30 @@ to fit the needs of the PGPemu Project for the ESP32 from Yohanes Nugroho (https
 To Download the SuotaGo+ App: https://github.com/Jesus805/Suota-Go-Plus/releases/tag/v1.0
 
 ## How to use
-Copy the Mac, blob and device key from the json file into the separte files(rawmac.txt; rawblob.txt; rawkey.txt) for each one (without the brackets "{}").
-Then just run PGPemuKeyFormatter.exe.
-The formatted data could be found in the three new files (mac.txt; bloob.txt; key.txt).
 
-### To build the project on your own
+### Command-Line Usage:
 
-Just download the source code and open it in Code Blocks to compile it.
 
+```
+python PGPemuKeyFormatter.py --path path_to_your_data.json
+``` 
+
+
+If your JSON file is in the same directory as the script and named "data.json," you can run the script without specifying the --path option:
+
+```
+python PGPemuKeyFormatter.py
+```
+
+The script generates a file called secrets.c in the dictonary it is run.
+Just replace the secrets.c file in the [pgpemu project](https://github.com/yohanes/pgpemu) with this generated one.
+
+
+
+### Required Libraries:
+
+Ensure that you have the argparse library available in your Python environment. If it's not installed, you can typically install it using pip:
+
+```
+pip install argparse
+```
